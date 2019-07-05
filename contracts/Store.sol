@@ -2,15 +2,15 @@ pragma solidity ^0.5.8;
 
 
 contract SimpleStorage {
-  uint myVariable;
+  uint myVariable = 1000;
   event Odd();
   event Even();
   function set(uint x) public {
     myVariable = 2*x;
     if(x % 2 == 0){
-      emit Odd();
-    }else{
       emit Even();
+    }else{
+      emit Odd();
     }
   }
 
