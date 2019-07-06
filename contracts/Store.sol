@@ -6,7 +6,7 @@ contract SimpleStorage {
   event Odd();
   event Even();
   function set(uint x) public {
-    myVariable = 2*x;
+    myVariable = x;
     if(x % 2 == 0){
       emit Even();
     }else{
